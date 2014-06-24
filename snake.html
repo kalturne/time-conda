@@ -254,9 +254,7 @@ var currentSpot = 11;
 var tempStorageForOldScore = 0;
     for (i = 10; i > 0; i--)
     {
-        //is there a value for this place on the board?  We probably don't need to check for null and "null" since it's only supposed to return "null", but too many 
-
-encounters with null pointers on Android arguably has been known to leave one cautious
+        //is there a value for this place on the board?  We probably don't need to check for null and "null" since it's only supposed to return "null", but too many encounters with null pointers on Android arguably has been known to leave one cautious
         if (localStorage.getItem("highScore" + i) == null || localStorage.getItem("highScore" + i) == "null")
         {
             //we should be able to store the score here since this spot is open
